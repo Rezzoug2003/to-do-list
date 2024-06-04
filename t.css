@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.todo-c{
+    width: 600px;
+    margin: 30px auto 30px;
+    background-color: #f6f6f6;
+    position: relative;
+}
+.todo-c .add-t{
+    padding: 15px;
+    background-color: #009688;
+    position: relative;
+}
+.todo-c .add-t input{
+    display: inline-block;
+    width: calc(100% - 15px);
+    padding:10px 15px ;
+    border: none;
+    background-color: rgb(255,255,255,0.3);
+    color: #f6f6f6;
+    /* font-size: 20px; */
+}
+.todo-c .add-t input:focus{
+    outline: none;
+}
+.todo-c .add-t .plus{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-color: #fff;
+    right: 12px;
+    border-radius: 50%;
+    line-height: 35px;
+    text-align: center;
+    color: #009688;
+    font-size: 28px;
+    transition: transform .44s;
+    cursor: pointer;
+
+}
+.todo-c .add-t .plus:hover{
+    transform: rotate(100deg);
+}
+.todo-c .task-c{
+    padding: 15px;
+}
+.todo-c .task-c .no-task-messag{
+    color: #777;
+    font-size: 16px;
+
+
+}
+.todo-c .task-c>span{
+    display: block;
+    background-color: #fff;
+    padding: 10px;
+}
+.todo-c .task-c>span:not(:last-child){
+    margin-bottom: 10px;
+}
+.todo-c .task-c .task-b .delet{
+    float: right;
+    background-color: #e91e63;
+    padding: 4px 10px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.todo-c .task-c .task-b.finish{
+    text-decoration: line-through;
+}
+.task-s{
+    overflow: hidden;
+    margin: 10px auto;
+    width: 600px;
+    font-size: 12px;
+}
+.task-s .task-cont{
+    width:50% ;
+    float: left;
+    padding: 10px;
+    
+}
+.task-s .task-conpleted{
+    width:50% ;
+    float: left;
+    padding: 10px;
+    text-align: right;
+}
+.task-s .task-cont span,
+.task-s .task-conpleted span{
+ color: #f6f6f6;  
+ padding: 1px 5px;
+ font-size: 10px;
+ border-radius: 4px; 
+ font-weight: bold;
+}
+.task-s .task-cont span{
+background-color: #e91e63;
+}
+.task-s .task-conpleted span{
+    background-color:#03a9f4 ;
+}
+ .deletall{
+    position: absolute;
+    background-color: #e91e63;
+    right: 15px; 
+    margin-top: 10px;
+    padding: 4px 10px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.finichall{
+    position: absolute;
+    background-color: #03a9f4;
+    left: 15px; 
+    margin-top: 10px;
+    padding: 4px 10px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
